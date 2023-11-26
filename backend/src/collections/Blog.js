@@ -77,12 +77,12 @@ const Blog = {
                 },
             },
         },
-        {
-            name: "pictureLink",
-            type: "text",
-            label: "Picture Link",
-        },
-    ]
+    ],
+    upload: {
+        staticURL: '/media',
+        staticDir: 'media',
+        mimeTypes:  ['image/*'],
+    }
 }
 
 export default Blog
