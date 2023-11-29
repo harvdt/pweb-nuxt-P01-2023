@@ -1,8 +1,8 @@
 import payload from 'payload';
 
 /** @type {import('payload/types').CollectionConfig} */
-const Blog = {
-    slug : "Blog",
+const Media = {
+    slug : "Media",
     access: {
         read : () => true,
         create : () => true,
@@ -19,7 +19,7 @@ const Blog = {
                     payload.create({
                         collection: "Log",
                         data: {
-                            collectionName: "Blog",
+                            collectionName: "Media",
                             action: "create",
                             timestamp: new Date(),
                         },
@@ -28,7 +28,7 @@ const Blog = {
                     payload.create({
                         collection: "Log",
                         data: {
-                            collectionName: "Blog",
+                            collectionName: "Media",
                             action: "update",
                             timestamp: new Date(),
                         },
@@ -37,7 +37,7 @@ const Blog = {
                     payload.create({
                         collection: "Log",
                         data: {
-                            collectionName: "Blog",
+                            collectionName: "Media",
                             action: "delete",
                             timestamp: new Date(),
                         },
@@ -46,45 +46,11 @@ const Blog = {
             },
         ],
     },
-    fields : [
-        {
-            name: "title",
-            type: "text",
-            required: true,
-            label: "Title",
-        },
-        {
-            name: "author",
-            type: "text",
-            required: true,
-            label: "Author",
-        },
-        {
-            name: "content",
-            type: "textarea",
-            required: true,
-            label: "Content",
-        },
-        {
-            name: "releaseDate",
-            type: "date",
-            required: true,
-            label: "Release Date",
-            admin: {
-                date: {
-                    pickerAppearance: 'dayOnly',
-                    displayFormat: 'dd/MM/yyyy',
-                },
-            },
-        },
-        {
-            name: "image",
-            type: "upload",
-            relationTo: "Media",
-            required: true,
-            label: "Image",
-        }
-    ],
+    upload: {
+        staticURL: '/media',
+        staticDir: 'media',
+        mimeTypes:  ['image/*'],
+    }
 }
 
-export default Blog
+export default Media
