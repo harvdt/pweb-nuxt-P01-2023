@@ -78,11 +78,10 @@ const Blog = {
             },
         },
         {
-            name: "image",
-            type: "upload",
-            relationTo: "Media",
+            name: "imageLink",
+            type: "textarea",
             required: true,
-            label: "Image",
+            label: "Image Link",
         }
     ],
 }
