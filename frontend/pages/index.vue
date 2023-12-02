@@ -13,11 +13,11 @@
 				<h1 class="text-4xl md:text-6xl font-bold leading-tight">
 					Welcome to
 					<span class="text-blue-900"
-						>1<span class="text-red-500">News</span></span
+						>IT<span class="text-red-500">Blogs</span></span
 					>
 				</h1>
 				<p class="mt-4 text-gray-500 text-lg">
-					"We provide the latest and most reliable news for you to read every
+					"We provide the latest and most reliable informations for you to read every
 					day"
 				</p>
 				<div class="mt-8">
@@ -57,10 +57,10 @@
 							<line x1="12" y1="9" x2="12" y2="15" />
 						</svg>
 						<h3 class="text-xl font-semibold mb-2 text-center">
-							Berita yang terpercaya
+							Informasi terpercaya
 						</h3>
 						<p class="text-gray-700 text-center">
-							Berita yang kami berikan dapat selalu anda percayai
+							Informasi yang kami berikan dapat selalu anda percayai
 						</p>
 					</div>
 
@@ -82,7 +82,7 @@
 							Mudah diakses
 						</h3>
 						<p class="text-gray-700 text-center">
-							Anda bisa mengakses berita kami kapan pun dan di mana pun
+							Akses kapan pun dan di mana pun
 						</p>
 					</div>
 
@@ -106,20 +106,20 @@
 							<path d="M7 12a5 5 0 0 1 5 -5" />
 						</svg>
 						<h3 class="text-xl font-semibold mb-2 text-center">
-							Berita ter-update
+							Blogs ter-update
 						</h3>
 						<p class="text-gray-700 text-center">
-							Berita satu detik yang lalu langsung ada di web kami
+							Blog paling update bagi Anda
 						</p>
 					</div>
 				</div>
 
 				<div class="mt-12 flex justify-center">
 					<NuxtLink
-						to="/news"
+						to="/blogs"
 						class="bg-blue-500 text-white font-semibold rounded-full px-8 py-3 hover:bg-blue-600 transition duration-300"
 					>
-						View All News
+						View All Blogs
 					</NuxtLink>
 				</div>
 			</div>
