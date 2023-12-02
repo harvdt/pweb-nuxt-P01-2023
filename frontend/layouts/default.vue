@@ -27,7 +27,7 @@
             About
           </NuxtLink>
         </li>
-        
       </ul>
     </div>
   </nav>
+</template>
